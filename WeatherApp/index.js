@@ -18,27 +18,27 @@ async function CheckWeather(city){
      }else{
         CityName=CityName;
      }
-    console.log(city)
+    // console.log(city)
     const response= await fetch(`${apiUrl}+${CityName}&appid=${apiKey}&units=metric`)
     const Data= await response.json();
-    console.log(Data)
-    console.log(Data.main)
+    // console.log(Data)
+    // console.log(Data.main)
     const Weather=Data.weather[0].main;
     // console.log(Weather)
 
-    let Temp=document.getElementById("temp")+"°C";
+    let Temp=document.getElementById("temp");
     let City=document.getElementById("city");
     let Humidity=document.getElementById("humidity");
     let WindSpeed=document.getElementById("wind-speed");
     // let Weathers=document.getElementById("weather-icon");
      
-    Temp.innerHTML=Math.round(Data.main.temp);
+    Temp.innerHTML=Math.round(Data.main.temp)+"°C";
     City.innerHTML=Data.name;
     Humidity.innerHTML=Data.main.humidity+"%";
     WindSpeed.innerHTML=Data.wind.speed +" Km/h";
 
     // console.log(Data.name)
-    console.log(Data.weather[0].main)
+    // console.log(Data.weather[0].main)
     // console.log(Data.main.humidity)
     let checkW=Data.weather[0].main;
     if(checkW=="Clouds"){
