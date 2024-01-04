@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather web app</title>
+    <link rel="shortcut icon" href="assets/snow.png" type="image/x-icon">
+
+    <!-- //this is the css link -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="searchbar">
+          <div id="search">
+            <input
+              type="text"
+              placeholder="search the city"
+              spellcheck="false"
+            />
+          </div>
+          <button id="search-btn"><img src="assets/search.png" alt="" /></button>
+        </div>
+        <div class="weather">
+          <img src="assets/rain.png" alt="" class="weather-icon" id="weather-icon" />
+          <h1 class="temp" id="temp">22°c</h1>
+          <h1 class="city" id="city">Kanpur</h1>
+        </div>
+        <div class="forcast-data">
+          <div class="humidity">
+            <div class="humidity-icon">
+              <img src="assets/humidity.png" alt="Humidity icon" />
+            </div>
+            <div class="humidity-data">
+              <h2 id="humidity">55%</h2>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="wind-speed">
+            <div class="wind-img">
+              <img src="assets/wind.png" alt="wind Icon" />
+            </div>
+            <div class="wind-speed-data">
+              <h2 id="wind-speed">7.8 Km/hr</h2>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //this is the javascript -->
+    <script src="index.js"></script>
+    *
+  </body>
+</html>
