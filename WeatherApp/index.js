@@ -12,7 +12,7 @@ const searchBtn=document.querySelector(".searchbar button")
 const Weather_Icons=document.querySelector(".weather-icon")
 
 async function CheckWeather(city){
-     let CityName="kanpur";
+     let CityName="Akbarpur";
      if(city){
          CityName=city;
      }else{
